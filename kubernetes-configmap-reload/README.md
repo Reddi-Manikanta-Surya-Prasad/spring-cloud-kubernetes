@@ -26,11 +26,8 @@ Pre-requisites.  [ TAKE AMAZON LINUX2 SYSTEM t2.micro]:
      sudo yum update -y
 
      Add Jenkins repo
-     sudo wget -O /etc/yum.repos.d/jenkins.repo \
-         https://pkg.jenkins.io/redhat-stable/jenkins.repo
-
-     Import Jenkins-CI key
-     sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+     sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+     sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
      Upgrade installed packages
      sudo yum upgrade -y
