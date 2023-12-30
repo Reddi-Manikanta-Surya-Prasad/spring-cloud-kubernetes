@@ -22,30 +22,30 @@ Pre-requisites.  [ TAKE AMAZON LINUX2 SYSTEM t2.micro]:
     
     - Install Jenkins
     
-     # Update software packages
-sudo yum update -y
+     Update software packages
+     sudo yum update -y
 
-# Add Jenkins repo
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    Add Jenkins repo
+    sudo wget -O /etc/yum.repos.d/jenkins.repo \
+        https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
-# Import Jenkins-CI key
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+   Import Jenkins-CI key
+   sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
-# Upgrade installed packages
-sudo yum upgrade -y
+   Upgrade installed packages
+   sudo yum upgrade -y
 
-# Install Jenkins
-sudo yum install jenkins -y
+   Install Jenkins
+   sudo yum install jenkins -y
 
-# Enable Jenkins service to start at boot
-sudo systemctl enable jenkins
+   Enable Jenkins service to start at boot
+   sudo systemctl enable jenkins
 
-# Start Jenkins service
-sudo systemctl start jenkins
+   Start Jenkins service
+   sudo systemctl start jenkins
 
-# Check Jenkins service status
-sudo systemctl status jenkins
+   Check Jenkins service status
+   sudo systemctl status jenkins
 
     
     
